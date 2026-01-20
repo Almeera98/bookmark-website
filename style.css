@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "poppins";
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "sans-serif";
+    src: url(./OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+/* navbar start */
+
+.bars{
+    display: none;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+}
+.nav.links{
+    display: flex;
+    gap: 30px;
+}
+.nav.links li{
+    list-style: none;
+}
+.nav.links li a{
+    text-decoration: none;
+    font-family: poppins;
+    color: black;
+    text-transform: uppercase;
+}
+.nav.links button{
+    border: none;
+    outline: none;
+    background: transparent;
+    background-color: red;
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+.nav.links button a{
+    text-decoration: none;
+    font-family: poppins;
+    color: white;
+    text-transform: uppercase;
+
+}
+/* navbar end */
+
+
+/* hero section */
+
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    padding: 70px 0px;
+    gap: 70px;
+}
+.content{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: poppins;
+}
+.content span{
+    font-size: 30px;
+    font-family: poppins;
+    font-weight: 700;
+
+}
+.content p{
+    color: rgb(145, 148, 162);
+}
+.hero img{
+    width: 30%;
+
+}
+.hero img{
+    width: 100%;
+}
+.content .btns button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: poppins;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.btns{
+    display: flex;
+    gap: 30px;
+}
+.btns #first{
+    color: white;
+    background-color: rgb(82, 103, 223);
+}
+.btns #second{
+    background-color: rgb(247, 247, 247);
+    box-shadow:  0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1);
+}
+.btns #second:hover{
+    color: white;
+    background-color: rgb(82, 103, 223);
+}
+.btns #first :hover{
+    color: white;
+    background-color: rgb(82, 103, 223);
+}
+.btns #second:hover{
+    color: black;
+    background-color: rgb(247, 247, 247);
+    box-shadow:  0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1);
+}
+.rectangle{
+    width: 50%;
+    height: 20rem;
+    background-color:rgb(82, 103, 223);
+    border-bottom-left-radius:999px ;
+    border-top-left-radius: 999px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    z-index: -5;
+
+}
+
+
+/* hero section end */
+
+/* features section start */
+.features{
+    background-color: rgb(247, 247, 247);
+    padding: 70px 0px;
+}
+.featurescontent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    font-family: poppins;
+    font-weight: 300;
+
+}
+.features.first{
+    order: -1;
+}
+.features.Manager{
+    width: 40%;
+}
+
+
+
+
+
+/* media queries */
+
+@media screen and (max-width:480px) {
+    .nav.links{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .hero i,g{
+        width: 100%;
+        padding: 0px 30px;
+    }
+}
+
+@media screen  and (min-width:481px) and (max-width:768px) {
+    .hero{
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .hero i,g{
+        width: 100%;
+        padding: 0px 30px;
+    }
+    
+}
